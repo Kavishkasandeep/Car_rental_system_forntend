@@ -1,0 +1,21 @@
+<div >
+  <button>add new</button>
+    <table>
+      <tr>
+        <td> id </td>
+        <td> name </td>
+        <td> price </td>
+      </tr>
+
+      <tr *ngFor = "let l of vehical">
+        <td>{{l.id}}</td>
+        <td>{{l.name}}</td>
+        <td>{{l.price}}</td>
+        <td><button>edit</button></td>
+        <td><button>Delete</button></td>
+      </tr>
+    </table>
+
+
+
+</div>
