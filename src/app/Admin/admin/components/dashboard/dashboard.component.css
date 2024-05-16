@@ -53,8 +53,8 @@
 
 #sidebar a:hover{
   border-radius:5px;
-  box-shadow: 0px 0px 0px #070913,
-              0px 0px 0px #171d2b,
-              inset 4px 4px 8px #171d2b,               inset -4px -4px 8px #6982bf;
+  box-shadow: 0px 0px 0px #090979,
+              0px 0px 0px #090979,
+              inset 4px 4px 8px #090979,               inset -4px -4px 8px #6982bf;
 }
 
