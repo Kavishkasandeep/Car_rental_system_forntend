@@ -1,21 +1,54 @@
-<div >
-  <button>add new</button>
-    <table>
-      <tr>
-        <td> id </td>
-        <td> name </td>
-        <td> price </td>
-      </tr>
-
-      <tr *ngFor = "let l of vehical">
-        <td>{{l.id}}</td>
-        <td>{{l.name}}</td>
-        <td>{{l.price}}</td>
-        <td><button>edit</button></td>
-        <td><button>Delete</button></td>
-      </tr>
-    </table>
+<h1>Car rental system</h1>
 
 
-
+<!-- form -->
+<form class="form" (ngSubmit)="saveVehical()">
+<div class="row g-6">
+  <div class="col-md-4">
+    <input type="text"  [(ngModel)]="newVehical.name" [ngModelOptions]="{standalone: true}" class="form-control" placeholder="Name" aria-label="Name"><br>
+  </div>
+  <div class="col-md-4">
+    <input type="text"[(ngModel)]="newVehical.color" [ngModelOptions]="{standalone: true}" class="form-control" placeholder="Color" aria-label="Color"><br>
+  </div>
+  <div class="col-md-4">
+    <input type="text"[(ngModel)]="newVehical.details" [ngModelOptions]="{standalone: true}" class="form-control" placeholder="Details" aria-label="Details"><br>
+  </div>
+  <div class="col-md-4">
+    <input type="text"[(ngModel)]="newVehical.image" [ngModelOptions]="{standalone: true}" class="form-control" placeholder="Image" aria-label="Image"><br>
+  </div>
+  <div class="col-md-4">
+    <input type="text"[(ngModel)]="newVehical.states"  [ngModelOptions]="{standalone: true}" class="form-control" placeholder="States" aria-label="States"><br>
+  </div>
+  <div class="col-md-4">
+    <input type="text"[(ngModel)]="newVehical.reg_number" [ngModelOptions]="{standalone: true}"  class="form-control" placeholder="Reg_number" aria-label="Reg_number"><br>
+  </div>
+  <div class="col-md-4">
+    <input type="text"[(ngModel)]="newVehical.price" [ngModelOptions]="{standalone: true}"  class="form-control" placeholder="Price" aria-label="Price"><br>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
 </div>
+</form>
+
+
+
+<!-- table view-->
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Name</th>
+      <th scope="col">Price</th>
+      <th scope="col">Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor = "let l of vehical">
+      <th scope="row">{{l.id}}</th>
+      <td>{{l.name}}</td>
+      <td>{{l.price}}</td>
+      <td>{{l.details}}</td>
+      <td><button type="button" class="btn btn-success">Edit</button></td>
+      <td><button type="button" class="btn btn-danger">Delete</button></td>
+    </tr>
+  </tbody>
+</table>

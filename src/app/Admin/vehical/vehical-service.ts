@@ -16,8 +16,15 @@ getVehicals():Observable < Vehical[]>{
   return this.httpClient.get <Vehical[]>(`${this.url+"/getvehical"}`)
 }
 
-
-
+addVehical(vehical:Vehical):Observable < any >{
+  return this.httpClient.post (`${this.url+"/AddVehical"}`,vehical)
+}
 
 
 }
+
+
+
+
+
+
