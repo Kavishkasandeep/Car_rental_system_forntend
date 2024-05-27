@@ -23,7 +23,7 @@ const routes: Routes = [
   {path:"adminLogin",component:LoginComponent},
   {path:"userLogin",component:UserLoginComponent},
   {path:"registration",component:RegistrationComponent},
-  {path:"contact",component:ContactUsComponent},
+  {path:"contactUs",component:ContactUsComponent},
   {path:"cars",component:CarsComponent},
   {path:"aboutUs",component:AboutUsComponent},
   {path:"home",component:HomeComponent},

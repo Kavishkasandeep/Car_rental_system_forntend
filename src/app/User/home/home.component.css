@@ -11,8 +11,9 @@
 }
 
 .carousel-caption h1 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 50px;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+  text-shadow: 0 5px 15px rgb(255, 0, 0);
 }
 
 
@@ -30,12 +31,12 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(75, 73, 73, 0.5);
+  background-color: rgba(71, 70, 70, 0.5);
   z-index: 2;
 }
 
 .card-img-top.hover-img {
-  transition: transform 0.3s ease;
+  transition: transform 0.1s ease;
 
 }
 
@@ -74,3 +75,23 @@
 .carousel-item {
   height: 90vh;
 }
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Add this style to your custom CSS file or within a <style> tag */
+.custom-btn {
+  background-color: #090979;
+  border-color: #090979;
+  color: white;
+}
+
+/* Custom hover styles */
+.custom-hover-btn:hover {
+  background-color: #dba810; /* Darker shade of yellow/orange */
+  border-color: #ffc400;    /* Match the border color to the background color */
+  color: white;             /* Change the text color for better contrast */
+}
+

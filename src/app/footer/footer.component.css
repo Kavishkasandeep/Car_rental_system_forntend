@@ -1,170 +1,145 @@
+/* Footer */
+.footer {
+  background-color: #111314; /* Dark blue background */
+  padding: 40px 0;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+}
 
-	/*---------------------------------- footer ---------------------------------*/
-    /* footer about */
-    .footer-head
-    {
-        line-height: 1.5;
-	font-family: 'Poppins', sans-serif;
-    }
-    .container-x{
-        max-width: 80%;
-        margin:auto;
-    }
-    .row-foo{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    ul{
-        list-style: none;
-    }
-    .footer-col-row
-    {
-        color: #bbbbbb;
-    }
-    .footer-col-row img{
-        height: 80px;
-        margin: 5px -60px;
-    }
-    .footer-col-row h1
-    {
-        margin-top: 10px;
-        margin-left: -90px;
-    }
-    .footer-col-row p
-    {
-        margin-top: 10px;
-        margin-left: -130px;
-        text-align: center;
-    }
-    .icons {
-        margin: 15px -110px;
-    }
-    .icons a{
-        margin: 10px;
-        font-size: 20px;
-        color: white;
-    }
-    .icons a i{
-        padding: 5px 9px;
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
 
-    }
-    .bi-facebook{
-        background: #1877f2;
-    }
-    .bi-google{
-        background: #c32aa3;
-    }
-    .bi-twitter{
-        background: #1da1f2;
-    }
-    .bi-linkedin{
-        background: #ff0000;
-    }
-    .footer{
-        background-color: #24262b;
-        padding: 20px 0;
-    }
-    .footer-col{
-       width: 20%;
-       padding: 0 15px;
-    }
-    .footer-col h4{
-        font-size: 18px;
-        color: #ffffff;
-        text-transform: capitalize;
-        margin-bottom: 35px;
-        font-weight: 500;
-        position: relative;
-    }
-    .footer-col h4::before{
-        content: '';
-        position: absolute;
-        left:0;
-        bottom: -10px;
-        background-color: #0b9c34;
-        height: 2px;
-        box-sizing: border-box;
-        width: 50px;
-    }
-    .footer-col ul li:not(:last-child){
-        margin-bottom: 10px;
-    }
-    .footer-col ul li a{
-        font-size: 16px;
-        text-transform: capitalize;
-        color: #ffffff;
-        text-decoration: none;
-        font-weight: 300;
-        color: #bbbbbb;
-        display: block;
-        transition: all 0.3s ease;
-    }
-    .footer-col ul li a:hover{
-        color: #ffffff;
-        padding-left: 8px;
-    }
-    /* footer contact us */
-    .my contact
-    {
-        height: 45vh;
-        margin: 35px 25px;
-        color: white;
-    }
-    input{
-        height: 40px;
-        width: 300px;
-        background: #fff;
-        border: 2px solid white;
-        padding: 15px;
-        font-size: 20px;
-        outline: none;
-        color: #000000;
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
-    }
-    textarea{
-        height: 130px;
-        width: 300px;
-        font-size: 20px;
-        padding: 10px 10px;
-        background: #fff;
-        border: 2px solid white;
-        color: #000000;
-    }
-    ::placeholder{
-        color: #24262b;
-    }
-    /* submit btn   */
-    .btn-footer{
-        height: 40px;
-        width: 100px;
-        margin: 5px 0;
-        background: #0b9c34;
-        color: white;
-        font-size: 20px;
-        cursor: pointer;
-        outline: none;
-        border: none;
-    }
+.footer-col {
+  width: 22%;
+  margin-bottom: 20px;
+}
 
-    .und{
-        background-color: #24262b;
-        color: gray;
-        text-align: center;
-    }
-    .footer-col a:hover{
-        color: #24262b;
-        background-color: #07521a;
-    }
+.footer h3 {
+  font-size: 24px;
+  color: #ffa500; /* Orange for headings */
+  margin-bottom: 15px;
+}
 
-    /*responsive*/
-    @media(max-width: 767px){
-      .footer-col{
-        width: 50%;
-        margin-bottom: 30px;
-    }
-    }
-    @media(max-width: 574px){
-      .footer-col{
-        width: 100%;
-    }
-    }
+.footer p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #cccccc; /* Light gray for text */
+}
+
+.footer h4 {
+  font-size: 18px;
+  color: #ffa500; /* Orange for headings */
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.footer h4::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #ffa500; /* Orange underline */
+  height: 2px;
+  width: 50px;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.footer ul li a {
+  color: #cccccc; /* Light gray for links */
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.footer ul li a i {
+  margin-right: 8px;
+  color: #ffa500; /* Orange for icons */
+}
+
+.footer ul li a:hover {
+  color: #ffa500; /* Orange on hover */
+}
+
+.footer .social-icons {
+  margin-top: 15px;
+}
+
+.footer .social-icons a {
+  color: white;
+  margin-right: 10px;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.footer .social-icons a:hover {
+  color: #ffa500; /* Orange on hover */
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #ffa500; /* Orange border */
+  background: #333333; /* Dark blue background for input fields */
+  color: white;
+  font-size: 16px;
+}
+
+::placeholder {
+  color: #cccccc; /* Light gray placeholder text */
+}
+
+.btn-footer {
+  background: #d18b08; /* Orange button */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.btn-footer:hover {
+  background: #ff7700; /* Darker orange on hover */
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #1a252f; /* Slightly darker blue for bottom */
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  color: gray;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  .footer-col {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}

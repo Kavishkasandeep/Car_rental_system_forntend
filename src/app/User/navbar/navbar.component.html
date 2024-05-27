@@ -1,24 +1,52 @@
 <nav class="navbar">
   <div class="logo">
-
-      <a href="#"><img style="width: 60px;margin-left: -20px;" src="../../../assets/Images/logo 1.jpeg" alt="" >&nbsp;&nbsp;&nbsp;GASTO Cars</a>
+    <a routerLink="/home">
+      <img src="../../../assets/Images/logo 1.jpeg" alt="Gasto Cars Logo" style="width: 80px;">
+      <b>GASTO Cars</b>
+    </a>
   </div>
   <div class="menu">
-      <div class="menu-links">
-          <a routerLink="/home"><b>Home</b></a>
-          <a routerLink=""><b>About Us</b></a>
-          <a routerLink=""><b>Contact us</b></a>
-          <a routerLink=""><b>Cars</b></a>
-      </div>
-      <div class="search-container">
-        <form class="d-flex" role="search">
-0          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-primary" type="submit">Search</button>
-        </form>
-      </div>
-      </div>
-      <button class="log-in" routerLink="/userLogin">Log In</button>
-  <div class="menu-btn">
-      <i class="fa fa-bars fa-solid"></i>
+    <div class="menu-links">
+      <div routerLink="/home">
+        <i class="fa fa-home"></i>
+        <b>Home</b>
+      </div>a>
+      <a routerLink="/aboutUs">
+        <i class="fa fa-info-circle"></i>
+        <b>About Us</b>
+      </a>
+      <a routerLink="/contactUs">
+        <i class="fa fa-envelope"></i>
+        <b>Contact Us</b>
+      </a>
+      <a routerLink="/cars">
+        <i class="fa fa-car"></i>
+        <b>Cars</b>
+      </a>
+    </div>
+    <div class="search-container">
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-primary" type="submit">
+          <i class="fa fa-search"></i> Search
+        </button>
+      </form>
+    </div>
+    <button class="log-in" routerLink="/userLogin">
+      <i class="fa fa-sign-in"></i> Log In
+    </button>
   </div>
+  <!-- <div class="menu-btn">
+    <i class="fa fa-bars"></i>
+  </div> -->
+  <!-- <div class="menu-btn" (click)="toggleMenu()">
+    <i class="fa fa-bars"></i>
+  </div> -->
+  <!-- <div class="menu" [ngClass]="{'show': menuOpen}">
+    Existing menu content
+  </div> -->
+  <div class="menu-btn" (click)="toggleMenu()">
+    <i class="fa fa-bars"></i>
+  </div>
+
 </nav>

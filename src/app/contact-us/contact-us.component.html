@@ -1,1 +1,35 @@
-<p>contact-us works!</p>
+<section class="contact-us">
+  <div class="container">
+    <h1><b>Contact Us</b></h1>
+    <p>We’d love to hear from you! Whether you have a question about our services, pricing, or anything else, our team is ready to answer all your questions.</p>
+
+    <div class="contact-details">
+      <div class="contact-info">
+        <h2>Contact Information</h2>
+        <p><strong>Address:</strong> 91/1,main street,Pohonnaruwa,Mirigama</p>
+        <p><strong>Phone:</strong> 0714378409</p>
+        <p><strong>Email:</strong> info@gastocars.com</p>
+      </div>
+
+      <div class="contact-form">
+        <h2>Send Us a Message</h2>
+        <form action="/send-message" method="POST">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn custom-btn">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
