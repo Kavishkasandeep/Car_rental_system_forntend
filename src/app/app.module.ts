@@ -19,6 +19,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { CarsComponent } from './cars/cars.component';
 import { NotfoundComponent } from './notfound/notfound.component';
+import { BookingComponent } from './booking/booking.component';
 
 
 
@@ -40,6 +41,7 @@ import { NotfoundComponent } from './notfound/notfound.component';
     ContactUsComponent,
     CarsComponent,
     NotfoundComponent,
+    BookingComponent,
 
 
 

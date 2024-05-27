@@ -12,6 +12,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { combineLatest } from 'rxjs';
 import { CarsComponent } from './cars/cars.component';
 import { NotfoundComponent } from './notfound/notfound.component';
+import { BookingComponent } from './booking/booking.component';
 
 
 
@@ -27,6 +28,7 @@ const routes: Routes = [
   {path:"cars",component:CarsComponent},
   {path:"aboutUs",component:AboutUsComponent},
   {path:"home",component:HomeComponent},
+  {path:"Booking",component:BookingComponent},
   {
 path: 'admin',component:AdminComponent, children:[
   {path:'', redirectTo:"login",pathMatch:"full"},
